@@ -1,10 +1,25 @@
-
+:root {
+  --libro: #13475b;
+}
 
 #contenedor {
   background-color: yellow;
   margin: 0 auto;
   max-width: 1100px;
   height: 90vh;
+}
+
+h2 {
+  font-size: 5rem;
+  color: var(--libro);
+  margin: 0;
+}
+
+h3 {
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+  color: var(--libro);  
 }
 
 header {
@@ -22,6 +37,15 @@ section {
   background-color: deepskyblue;
 }
 
+
+
 .libro {
-  background-color: deeppink;
+  background-color: #6FE1FB;
+  display: grid;
+  grid: 1fr / 1fr;
+  align-items: flex-end;
+}
+
+.libro img {
+  width: 100%;
 }
