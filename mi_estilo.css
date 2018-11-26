@@ -2,11 +2,30 @@
   --libro: #13475b;
 }
 
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
 #contenedor {
   background-color: yellow;
   margin: 0 auto;
   max-width: 1100px;
   height: 90vh;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: var(--libro);
+  font-size: 6rem
 }
 
 h2 {
@@ -19,7 +38,7 @@ h3 {
   font-size: 3rem;
   margin: 0;
   padding: 0;
-  color: var(--libro);  
+  color: var(--libro);
 }
 
 header {
@@ -29,12 +48,20 @@ header {
 
 section {
   display: grid;
+  grid-gap: 1rem;
   grid-template-columns: 50% 50%;
   grid-template-rows: 80% 20%;
   height: 100%;
 }
 .online {
-  background-color: deepskyblue;
+  background-color: deeppink;
+  background-image: url("img/olentzero-online.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.online img {
+  width: 100%;
 }
 
 
@@ -43,7 +70,6 @@ section {
   background-color: #6FE1FB;
   display: grid;
   grid: 1fr / 1fr;
-  align-items: flex-end;
 }
 
 .libro img {
