@@ -1,6 +1,7 @@
 :root {
   --libro: #13475b;
   --padding1: 5%;
+  --padding2: 10%;
 }
 
 html {
@@ -29,7 +30,7 @@ h2 {
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 0;
   padding: 0;
   color: var(--libro);
@@ -70,8 +71,14 @@ section {
 
 #cuaderno {
   background-color: #FFFFFF;
-  height: 900px;
+  height: 800px;
   padding-top: 40px;
+  border: 1px solid black;
+  margin: 0.5rem;
+}
+
+#cuaderno h2 {
+  margin-top: 15px;
 }
 
 #cuaderno img {
@@ -80,7 +87,7 @@ section {
 
 #cuaderno p {
   color: var(--libro);
-  padding-left: 10%;
+  padding-left: var(--padding2);
   padding-right: 10%;
 }
 
