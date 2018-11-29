@@ -191,8 +191,44 @@ section {
   padding-bottom: 2%;
 }
 
-.check {
-  background-color: deepskyblue;
+#consejos {
+  background-color: #F2C301;
+  height: 900px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "consejo1 consejo2"
+    "consejo3 consejo4"
+    "img_principal img_principal";
+  align-items: flex-end;
+  grid-gap: 1rem;
+  padding: 3rem;
+  color: 333;
+}
+
+#consejo1 {
+  grid-area: consejo1;
+}
+
+#consejo2 {
+  grid-area: consejo2;
+}
+
+#consejo3 {
+  grid-area: consejo3;
+}
+
+#consejo4 {
+  grid-area: consejo4;
+}
+
+#consejos img {
+  width: 100%;
+}
+
+#img_principal {
+  grid-area: img_principal;
 }
 
 @media screen and (min-width:768px) {
