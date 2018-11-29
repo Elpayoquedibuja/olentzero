@@ -18,12 +18,12 @@ body {
 
 h1 {
   color: var(--libro);
-  font-size: 3rem
+  font-size: 2rem
 }
 
 
 h2 {
-  font-size: 5rem;
+  font-size: 2rem;
   color: var(--libro);
   margin: 0;
 }
@@ -62,6 +62,7 @@ section {
 
 
 .contenedor {
+  width: 100%;
   margin: 10px auto;
   max-width: 1100px;
   height: auto;
@@ -101,7 +102,7 @@ section {
 }
 
 #olentzeroa {
-  height: 80vh;
+  height: 60vh;
 }
 
 #titulo {
@@ -115,11 +116,12 @@ section {
 
 
 #online {
-  align-items: flex-end;
   background-color: deeppink;
   background-image: url("img/olentzero-online.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  display: grid;
+  grid-template-rows: 5vh 20vh 15vh 60vh;
   height: 100vh;
 }
 
@@ -208,8 +210,13 @@ section {
   }
 
   #online {
-    display: block;
     height: 100vh;
+    grid-template-rows: 10vh 20vh 5vh 65vh;
+  }
+
+  #online p {
+    padding-left: 4%;
+    padding-right: 50%;
   }
 
   #punto {
@@ -218,16 +225,20 @@ section {
     align-items: flex-end;
   }
 
-  #txt {
+  #titulo {
+    align-items: flex-end;
+  }
+
+  /* #txt {
     height: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-  }
+  } */
 
   #olentzeroa {
-    height: 60vh;
+    height: 65vh;
   }
 
   #olentzeroa img {
@@ -240,9 +251,7 @@ section {
     width: auto;
   }
 
-  #online p {
-  padding-right: 10%;
-  }
+
 
 }
 
