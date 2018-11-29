@@ -94,11 +94,15 @@ section {
   display: grid;
   grid-template-rows: 40% 60%;
   align-items: flex-end;
-  height: 600px;
+  height: 450px;
 }
 
 #libro img {
   width: 100%;
+}
+
+#libro p {
+  padding-left: var(--padding1);
 }
 
 #olentzeroa {
