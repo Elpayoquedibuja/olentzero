@@ -125,6 +125,7 @@ section {
   width: 100%;
 }
 
+/* WARNING: GRID!!!!!!!!!! */
 
 #online {
   background-color: deeppink;
@@ -196,6 +197,9 @@ section {
 
 @media screen and (min-width:768px) {
     /* WARNING: IPAD */
+    /* WARNING: IPAD */
+    /* WARNING: IPAD */
+    /* WARNING: IPAD */
 
   body {
     background-color: deepskyblue;
@@ -203,6 +207,14 @@ section {
 
   h1 {
     font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 3rem;
   }
 
   section {
@@ -281,14 +293,17 @@ section {
 }
 
 @media screen and (min-width:980px) {
-
+/* WARNING: ORDENADOR DE ESCRITORIO */
+/* WARNING: ORDENADOR DE ESCRITORIO */
+/* WARNING: ORDENADOR DE ESCRITORIO */
+/* WARNING: ORDENADOR DE ESCRITORIO */
 
   body {
     background-color: deeppink;
   }
 
   h1 {
-    font-size: 6rem
+    font-size: 4rem
   }
 
   section {
@@ -304,21 +319,27 @@ section {
 
   #online {
     height: 800px;
+    /* display: grid;
+    grid-template-rows: 200px 300px 300px; */
     display: grid;
-    grid-template-rows: 200px 300px 300px;
+    grid-template-rows: 50px 150px 80px 520px;
 
+  }
+
+  #espacio {
+    height: 50px;
   }
 
   #olentzeroa {
-    height: 300px;
+    height: 520px;
   }
 
   #olentzeroa img {
-    height: 300px;
+    height: 480px;
     width: auto;
   }
 
-  #punto {
+  #titulo {
     height: 150px;
   }
 
@@ -330,7 +351,4 @@ section {
     height: 800px;
   }
 
-  #online img {
-    width: 40%;
-  }
 }
