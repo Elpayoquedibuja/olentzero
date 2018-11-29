@@ -36,6 +36,14 @@ h3 {
   color: var(--libro);
 }
 
+h4 {
+  font-size: 1.4rem;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  color: var(--libro);
+}
+
 h1, h2, h3 {
   margin: 0;
   padding: 0;
@@ -60,6 +68,12 @@ section {
   grid-row-gap: 3rem;
 }
 
+ul {
+  padding: 0 15%;
+  color: var(--libro);
+  line-height: 1.4rem;
+}
+
 
 
 .contenedor {
@@ -68,6 +82,8 @@ section {
   max-width: 1100px;
   height: auto;
 }
+
+
 
 #cuaderno {
   background-color: #FFFFFF;
@@ -92,6 +108,11 @@ section {
 }
 
 #img_cuadernoa {
+  padding-left: 8%;
+  text-align: center;
+}
+
+#img_cuadernoa2 {
   padding-left: 8%;
   text-align: center;
 }
@@ -191,45 +212,36 @@ section {
   padding-bottom: 2%;
 }
 
-#consejos {
-  background-color: #F2C301;
+#cuaderno2 {
+  background-color: #FFFFFF;
   height: 900px;
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "consejo1 consejo2"
-    "consejo3 consejo4"
-    "img_principal img_principal";
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   align-items: flex-end;
-  grid-gap: 1rem;
-  padding: 3rem;
   color: 333;
 }
 
-#consejo1 {
-  grid-area: consejo1;
+
+#cuaderno2 #cuaderno_txt img {
+  width: 70%;
 }
 
-#consejo2 {
-  grid-area: consejo2;
-}
-
-#consejo3 {
-  grid-area: consejo3;
-}
-
-#consejo4 {
-  grid-area: consejo4;
-}
-
-#consejos img {
+#cuaderno2 img {
   width: 100%;
 }
 
-#img_principal {
-  grid-area: img_principal;
+#titulo2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
+
+#titulo2 h4 {
+  padding-bottom: 14px;
+}
+
+
 
 @media screen and (min-width:768px) {
     /* WARNING: IPAD */
