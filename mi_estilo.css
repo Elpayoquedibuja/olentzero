@@ -74,7 +74,7 @@ section {
   height: 800px;
   padding-top: 40px;
   border: 1px solid black;
-  margin: 0.5rem;
+  margin: 1rem;
 }
 
 #cuaderno h2 {
@@ -159,6 +159,10 @@ section {
   align-items: flex-end;
 }
 
+#punto {
+  padding-right: 10px;
+}
+
 #activado {
     -webkit-animation: 2s intermitente 40;
   }
@@ -191,6 +195,7 @@ section {
 }
 
 @media screen and (min-width:768px) {
+    /* WARNING: IPAD */
 
   body {
     background-color: deepskyblue;
@@ -223,11 +228,20 @@ section {
   #online {
     height: 100vh;
     grid-template-rows: 10vh 20vh 5vh 65vh;
+    background-color: white;
+    background-image: url("img/olentzero-fnd-3.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: auto 100%;
+
   }
 
   #online p {
     padding-left: 4%;
     padding-right: 50%;
+    padding-right: 35%;
+    border-left: 1px solid black;
+    margin-left: 10%;
   }
 
   #punto {
