@@ -1,5 +1,6 @@
 :root {
   --libro: #13475b;
+  --padding1: 5%;
 }
 
 html {
@@ -11,16 +12,13 @@ html {
 }
 
 body {
+  background-color: white;
 }
 
-h1, h2, h3 {
-  margin: 0;
-  padding: 0;
-}
 
 h1 {
   color: var(--libro);
-  font-size: 4rem
+  font-size: 3rem
 }
 
 
@@ -37,6 +35,12 @@ h3 {
   color: var(--libro);
 }
 
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+  padding-left: var(--padding1);
+}
+
 header {
   display: block;
   width: 100%;
@@ -45,22 +49,19 @@ header {
 p {
   padding: 0;
   margin: 0;
-  font-size: 1.2rem;
-  line-height: 1.7rem;
+  font-size: 1rem;
+  line-height: 1.2rem;
 }
 
 section {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: unset;
-  background-color: gold;
-  grid-row-gap: 1rem;
+  grid-row-gap: 3rem;
 }
 
 
 
-#contenedor {
-  background-color: white;
+.contenedor {
   margin: 10px auto;
   max-width: 1100px;
   height: auto;
@@ -92,7 +93,7 @@ section {
   display: grid;
   grid-template-rows: 40% 60%;
   align-items: flex-end;
-  height: 800px;
+  height: 600px;
 }
 
 #libro img {
@@ -100,12 +101,18 @@ section {
 }
 
 #olentzeroa {
-  grid-row: 3 / 4;
+  height: 80vh;
 }
 
-#olentzeroa img {
-  width: 45%;
+#titulo {
+  padding-left: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 20vh;
+  width: 100%;
 }
+
 
 #online {
   align-items: flex-end;
@@ -113,17 +120,16 @@ section {
   background-image: url("img/olentzero-online.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  display: grid;
-  grid-template-rows: 20% 30% 50%;
-  height: 800px;
+  height: 100vh;
 }
 
-#online img {
-  width: 60%;
+#olentzeroa img {
+  height: 100%;
+  width: auto;
 }
 
 #online .berdea img  {
-  width: 20%;
+  height: 15vh;
 }
 
 #online p {
@@ -134,6 +140,23 @@ section {
 
 #portada img {
   width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: flex-end;
+}
+
+#activado {
+    -webkit-animation: 2s intermitente 40;
+  }
+
+@-webkit-keyframes intermitente {
+  25%, 75% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }
 
 #txt {
@@ -146,7 +169,7 @@ section {
 
 .berdea {
   grid-row: 1 / 2;
-  padding-left: 9%;
+  padding-left: 3%;
   padding-bottom: 2%;
 }
 
@@ -154,30 +177,123 @@ section {
   background-color: deepskyblue;
 }
 
+@media screen and (min-width:768px) {
+
+  body {
+    background-color: deepskyblue;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: unset;
+    grid-row-gap: 3rem;
+  }
+
+  #cuaderno {
+      background-color: #FFFFFF;
+      height: 1000px;
+      padding-top: 40px;
+  }
+
+  #libro {
+    grid-template-rows: 20% 80%;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 900px;
+  }
+
+  #online {
+    display: block;
+    height: 100vh;
+  }
+
+  #punto {
+    height: 20vh;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  #txt {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  #olentzeroa {
+    height: 60vh;
+  }
+
+  #olentzeroa img {
+    height: 100%;
+    width: auto;
+  }
+
+  #online .berdea img {
+    height: 15vh;
+    width: auto;
+  }
+
+  #online p {
+  padding-right: 10%;
+  }
+
+}
+
 @media screen and (min-width:980px) {
+
+
+  body {
+    background-color: deeppink;
+  }
 
   h1 {
     font-size: 6rem
-  }
-
-  body {
-    background-color: royalblue;
   }
 
   section {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
-    background-color: gold;
     grid-gap: 1rem;
   }
 
-  #contenedor {
-    border: 10px solid deepskyblue;
+  .contenedor {
+
+  }
+
+  #online {
+    height: 800px;
+    display: grid;
+    grid-template-rows: 200px 300px 300px;
+
+  }
+
+  #olentzeroa {
+    height: 300px;
+  }
+
+  #olentzeroa img {
+    height: 300px;
+    width: auto;
+  }
+
+  #punto {
+    height: 150px;
   }
 
   #cuaderno {
     height: 900px;
+  }
+
+  #libro {
+    height: 800px;
   }
 
   #online img {
