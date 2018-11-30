@@ -83,25 +83,52 @@ ul {
   height: auto;
 }
 
+#gutuna {
+  background-color: AliceBlue;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+gutuna p {
+
+}
+
+#img_gutuna {
+  height: 300px;
+  background-image: url("img/olentzero-online_neskatxo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 
-#cuaderno {
-  background-color: #FFFFFF;
+#titulo3 {
+  width: 100%;
+  height: 100px;
+}
+
+
+
+
+#cuaderno1 {
   height: 800px;
+  background-color: #FFFFFF;
   padding-top: 40px;
   border: 1px solid black;
   margin: 1rem;
 }
 
-#cuaderno h2 {
+#cuaderno1 h2 {
   margin-top: 15px;
 }
 
-#cuaderno img {
+#cuaderno1 img {
   width: 70%;
 }
 
-#cuaderno p {
+#cuaderno1 p, #gutuna p {
   color: var(--libro);
   padding-left: var(--padding2);
   padding-right: 10%;
@@ -117,23 +144,9 @@ ul {
   text-align: center;
 }
 
-#gutuna {
-  height: 400px;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-}
-
-#img_gutuna {
-  background-color: white;
-  background-image: url("img/olentzero-online_neskatxo.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 
 
-}
+
 
 #libro {
   background-color: #6FE1FB;
@@ -238,6 +251,12 @@ ul {
   justify-content: flex-end;
   align-items: flex-end;
   color: 333;
+
+  height: 800px;
+  background-color: #FFFFFF;
+  padding-top: 40px;
+  border: 1px solid black;
+  margin: 1rem;
 }
 
 
@@ -290,7 +309,7 @@ ul {
     grid-row-gap: 3rem;
   }
 
-  #cuaderno {
+  #cuaderno1{
       background-color: #FFFFFF;
       height: 1000px;
       padding-top: 40px;
@@ -375,15 +394,43 @@ ul {
   section {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "online libro"
+    "cuaderno1 cuaderno2"
+    "gutuna gutuna";
     grid-gap: 1rem;
   }
 
+  #online {
+    grid-area: online;
+  }
+
+  #libro {
+    grid-area: libro;
+  }
+
+  #cuaderno1 {
+    grid-area: cuaderno1;
+    height: 900px;
+  }
+
+  #cuaderno2 {
+    grid-area: cuaderno2;
+
+    margin-top: 0;
+    height: 900px;
+  }
+
+ #gutuna {
+   grid-area: gutuna;
+ }
   .contenedor {
 
   }
 
-  #cuaderno {
+
+  #cuaderno1, #cuaderno2 {
     border: 0;
     margin: 0;
   }
@@ -414,9 +461,7 @@ ul {
     height: 150px;
   }
 
-  #cuaderno {
-    height: 900px;
-  }
+
 
   #libro {
     height: 800px;
