@@ -394,21 +394,15 @@ gutuna p {
   section {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 900px 900px 1400px;
     grid-template-areas:
     "online libro"
     "cuaderno1 cuaderno2"
     "gutuna gutuna";
-    grid-gap: 1rem;
+    grid-gap: 40px;
+    height: 3200px;
   }
 
-  #online {
-    grid-area: online;
-  }
-
-  #libro {
-    grid-area: libro;
-  }
 
   #cuaderno1 {
     grid-area: cuaderno1;
@@ -422,30 +416,36 @@ gutuna p {
     height: 900px;
   }
 
- #gutuna {
-   grid-area: gutuna;
- }
-  .contenedor {
-
-  }
-
-
   #cuaderno1, #cuaderno2 {
     border: 0;
     margin: 0;
   }
 
+  #espacio {
+    height: 50px;
+  }
+
+ #gutuna {
+   grid-area: gutuna;
+   height: 1400px;
+ }
+
+ #img_gutuna {
+   height: 650px;
+ }
+
+  #libro {
+    grid-area: libro;
+    height: 900px;
+  }
+
   #online {
-    height: 800px;
+    height: 900px;
     /* display: grid;
     grid-template-rows: 200px 300px 300px; */
     display: grid;
     grid-template-rows: 50px 150px 80px 520px;
 
-  }
-
-  #espacio {
-    height: 50px;
   }
 
   #olentzeroa {
@@ -463,8 +463,6 @@ gutuna p {
 
 
 
-  #libro {
-    height: 800px;
-  }
+
 
 }
