@@ -117,6 +117,24 @@ ul {
   text-align: center;
 }
 
+#gutuna {
+  height: 400px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+#img_gutuna {
+  background-color: white;
+  background-image: url("img/olentzero-online_neskatxo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+
+}
+
 #libro {
   background-color: #6FE1FB;
   display: grid;
