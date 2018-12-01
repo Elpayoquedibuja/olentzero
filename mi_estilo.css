@@ -392,7 +392,6 @@ gutuna p {
     background-repeat: no-repeat;
     background-position: right;
     background-size: auto 100%;
-
   }
 
   #online p {
@@ -408,7 +407,7 @@ gutuna p {
   }
 
   #gutuna {
-    height: 2000px;
+    height: 2200px;
   }
 
   #img_gutuna {
@@ -426,7 +425,7 @@ gutuna p {
   }
 
   #titulo3 {
-    height: 200px;
+    height: 300px;
   }
 
   /* #txt {
@@ -481,6 +480,29 @@ gutuna p {
     height: 3200px;
   }
 
+  #online {
+    grid-area: "online";
+  }
+
+  #libro {
+    height: 100vh;
+    grid-area: "libro";
+  }
+
+  #cuaderno1 {
+    grid-area: "cuaderno1";
+  }
+
+  #cuaderno2 {
+    grid-area: "cuaderno2";
+  }
+
+  #gutuna {
+    height: 1200px;
+    grid-area: "gutuna";
+    grid-column: 1 / 3;
+  }
+
   #argidibe article {
     text-align: center;
   }
@@ -517,28 +539,26 @@ gutuna p {
     height: 50px;
   }
 
- #gutuna {
-   height: 1400px;
-   width: 100%;
- }
+
 
  #img_gutuna {
-   height: 650px;
+   height: 700px;
  }
 
   #libro {
     grid-area: libro;
-    height: 900px;
   }
 
+
+/* Comentado el sábado a las 14:59
   #online {
     height: 900px;
     /* display: grid;
-    grid-template-rows: 200px 300px 300px; */
+    grid-template-rows: 200px 300px 300px;
     display: grid;
     grid-template-rows: 50px 150px 80px 520px;
 
-  }
+  } */
 
   #olentzeroa {
     height: 520px;
@@ -550,6 +570,10 @@ gutuna p {
   }
 
   #titulo {
+    height: 150px;
+  }
+
+  #titulo3 {
     height: 150px;
   }
 
