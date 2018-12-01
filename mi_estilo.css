@@ -360,10 +360,15 @@ gutuna p {
   }
 
   section {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: unset;
-    grid-row-gap: 3rem;
+
+  }
+
+  .iconos img {
+    width: 40%;
+  }
+
+.iconos {
+    text-align: center;
   }
 
   #cuaderno1{
@@ -398,6 +403,18 @@ gutuna p {
     margin-left: 10%;
   }
 
+  #cuaderno1, #cuaderno2 {
+    height: 1100px;
+  }
+
+  #gutuna {
+    height: 2000px;
+  }
+
+  #img_gutuna {
+    height: 500px;
+  }
+
   #punto {
     height: 20vh;
     display: flex;
@@ -406,6 +423,10 @@ gutuna p {
 
   #titulo {
     align-items: flex-end;
+  }
+
+  #titulo3 {
+    height: 200px;
   }
 
   /* #txt {
@@ -451,7 +472,7 @@ gutuna p {
   section {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 900px 900px 1400px;
+    grid-template-rows: 100vh 100% 100%;
     grid-template-areas:
     "online libro"
     "cuaderno1 cuaderno2"
@@ -479,13 +500,10 @@ gutuna p {
 
 
   #cuaderno1 {
-    grid-area: cuaderno1;
     height: 900px;
   }
 
   #cuaderno2 {
-    grid-area: cuaderno2;
-
     margin-top: 0;
     height: 900px;
   }
@@ -500,8 +518,8 @@ gutuna p {
   }
 
  #gutuna {
-   grid-area: gutuna;
    height: 1400px;
+   width: 100%;
  }
 
  #img_gutuna {
@@ -534,6 +552,8 @@ gutuna p {
   #titulo {
     height: 150px;
   }
+
+
 
 
 
