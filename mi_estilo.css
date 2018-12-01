@@ -71,7 +71,7 @@ section {
 section {
   display: grid;
   grid-template-columns: 100% ;
-  grid-template-rows: 100vh 450px 800px 800px 1fr;
+  grid-template-rows: 100vh 100% 100% 100% 100%;
   grid-template-areas:
   "online"
   "cuaderno1"
@@ -109,13 +109,13 @@ section {
 
 #cuaderno1 {
   grid-area: "cuaderno1";
-  height: 800px;
+  height: 900px;
   width: auto;
 }
 
 #cuaderno2 {
   grid-area: "cuaderno2";
-  height: 800px;
+  height: 900px;
   width: auto;
 }
 
