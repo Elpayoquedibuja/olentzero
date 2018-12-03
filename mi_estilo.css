@@ -114,12 +114,15 @@ ul {
 #libro {
 
   grid-area: libro;
-  height: 450px;
+  height: 480px;
   background-color: #6FE1FB;
-  display: flex;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 380px;
+  align-items: flex-end;
+  /* display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: flex-end; */
   border: 1px solid black;
   }
 
@@ -255,7 +258,8 @@ ul {
 }
 
 #portada {
-  height: 380px;
+  height: auto;
+  display: inherit;
 }
 
 
@@ -315,10 +319,6 @@ ul {
 
 #portada img {
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  align-items: flex-end;
 }
 
 #punto {
