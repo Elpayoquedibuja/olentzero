@@ -19,7 +19,7 @@ body {
 
 h1 {
   color: var(--libro);
-  font-size: 2rem
+  font-size: 3rem
 }
 
 
@@ -71,7 +71,7 @@ section {
 section {
   display: grid;
   grid-template-columns: 100% ;
-  grid-template-rows: 100vh 100% 100% 100% 100%;
+  grid-template-rows: 100vh 480px 800px 800px 1600px;
   grid-template-areas:
   "online"
   "cuaderno1"
@@ -79,7 +79,7 @@ section {
   "cuaderno2"
   "gutuna";
   grid-gap: 1rem;
-  height: auto;
+  height: 2000px;
 
 }
 
@@ -105,7 +105,21 @@ section {
   padding-top: 20px;
   grid-area: "libro";
   height: 450px;
-  width: auto;
+
+  background-color: #6FE1FB;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  }
+
+  #libro img {
+    width: 100%;
+  }
+
+  #libro p {
+    padding-left: var(--padding1);
+  }
 }
 
 #cuaderno1 {
@@ -122,8 +136,14 @@ section {
 
 #gutuna {
   grid-area: "gutuna";
-  height: 1400px;
+  grid-row: 5 / 6;
+  height: 1600px;
   width: auto;
+  background-color: AliceBlue;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
 }
 
 ul {
@@ -138,16 +158,9 @@ ul {
   width: 100%;
   margin: 10px auto;
   max-width: 1100px;
-  height: auto;
 
 }
 
-#gutuna {
-  background-color: AliceBlue;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
 
 gutuna p {
 
@@ -164,7 +177,7 @@ gutuna p {
 
 #titulo3 {
   width: 100%;
-  height: 100px;
+  height: 200px;
 }
 
 
@@ -198,29 +211,8 @@ gutuna p {
 }
 
 #img_cuadernoa2 {
-  padding-left: 8%;
+  padding-left: 0;
   text-align: center;
-}
-
-
-
-
-
-#libro {
-  background-color: #6FE1FB;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  height: auto;
-}
-
-#libro img {
-  width: 100%;
-}
-
-#libro p {
-  padding-left: var(--padding1);
 }
 
 #olentzeroa {
@@ -244,10 +236,10 @@ gutuna p {
 /* WARNING: GRID!!!!!!!!!! */
 
 #online {
-  background-color: deeppink;
-  background-image: url("img/olentzero-online.jpg");
+  background-color: white;
+  /* background-image: url("img/olentzero-online.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   display: grid;
   grid-template-rows: 5vh 20vh 15vh 60vh;
   height: 100vh;
@@ -332,6 +324,10 @@ gutuna p {
   width: 100%;
 }
 
+#img_principal {
+  height: 400px;
+}
+
 #titulo2 {
   display: flex;
   justify-content: flex-start;
@@ -340,6 +336,14 @@ gutuna p {
 
 #titulo2 h4 {
   padding-bottom: 14px;
+}
+
+.icono img {
+  width: 80%;
+}
+
+.iconos {
+  text-align: center;
 }
 
 
@@ -395,10 +399,10 @@ gutuna p {
     height: 100vh;
     grid-template-rows: 10vh 20vh 5vh 65vh;
     background-color: white;
-    background-image: url("img/olentzero-fnd-3.jpg");
+    /* background-image: url("img/olentzero-fnd-3.jpg");
     background-repeat: no-repeat;
     background-position: right;
-    background-size: auto 100%;
+    background-size: auto 100%; */
   }
 
   #online p {
@@ -478,7 +482,7 @@ gutuna p {
   section {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 100vh 100% 100%;
+    grid-template-rows: 100vh 900px 1200px;
     grid-template-areas:
     "online libro"
     "cuaderno1 cuaderno2"
@@ -497,17 +501,22 @@ gutuna p {
   }
 
   #cuaderno1 {
+    height: 1200px;
     grid-area: "cuaderno1";
+    grid-row: 2 / 3;
   }
 
   #cuaderno2 {
+    height: 1200px;
     grid-area: "cuaderno2";
+    grid-row: 2 / 3;
   }
 
   #gutuna {
-    height: 1200px;
+    height: 1400px;
     grid-area: "gutuna";
     grid-column: 1 / 3;
+    grid-row: 3 / 4;
   }
 
   #argidibe article {
